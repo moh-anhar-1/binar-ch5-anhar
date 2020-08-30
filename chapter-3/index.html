@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="anhar">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page One -->
+<header id="mainpage">
+    <!-- main menu: navigation -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top trn">
+            <div class="container">
+                <a class="navbar-brand" href="#">logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarMainMenu">
+                  <ul class="navbar-nav mx-auto px-5">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">work</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">contact</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">about me</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarRegister">
+                  <ul class="navbar-nav ml-auto px-5">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">sign up</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">log in</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- main call to action: h1 h3 [[{a("Open Sans")=PLAY NOW} background button] button]  -->
+    <div class="main">
+        <div class="container main-section-p1">
+            <h1>play traditional game</h1>
+            <h3>Experience new traditional game play</h3>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-lg call-action">play now</button>
+            </div>
+            </div>
+    </div>
+    <!-- slide to the next page: [{a("Open Sans")=THE STORY; scroll down btn(svg import from figma)} button]  -->
+    <div class="footer">
+        <div class="container story-button">
+            <div class="button">
+                <a class="story" href="#section-option">the story</a>                
+            </div>
+            <div class="button" type>
+                <a href="#section-option"><img src="./Asset/Halaman1/scroll down.svg"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Two -->
+<section id="section-option">
+    <!-- nothing -->
+    <div class="header"></div>
+    <!-- game play option: h3 h1 slider -->
+    <div class="main"></div>
+    <div class="container textpagetwo">
+      <div class='row'>
+          <div class="let-space font-header-style main-section-p2 col-md-6">
+              <h3>What's so special?</h3>
+              <h1>the games</h1>
+          </div>
+
+          <div class='col-md-6'>
+              <div class="slideshow-container">
+                  <!-- wrapper satu gambar slide -->
+                  <div class="mySlides">
+                      <img src="./Asset/Halaman2/rockpaperstrategy-1600.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                      <img src="./Asset/Halaman2/compass.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                      <img src="./Asset/Halaman2/blueprint.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                      <img src="./Asset/Halaman2/queen.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                      <img src="./Asset/Halaman2/zippo.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="slideshow-pointer">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+                  </div>
+              
+                  <!-- tanda panah ke kiri (prev slide) dan kanan (next slide) -->
+                  <svg width="20" height="38" class="prev-item" onclick="plusSlides(-1)" viewBox="0 0 20 38" fill="none" xmlns="./Asset/Halaman2/prev.svg">
+                      <path d="M18 1.70007L18 35.7001L2 18.8904L18 1.70007Z" stroke="white" stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg width="18" height="39" class="next-item" onclick="plusSlides(1)" viewBox="0 0 18 39" fill="none" xmlns="./Asset/Halaman2/next.svg">
+                      <path d="M1.82153 2.65635L1.82153 36.7297L15.5642 19.8838L1.82153 2.65635Z" stroke="white" stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>    
+          </div>
+      </div>  
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+              showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+              showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              }
+              </script>
+    </div>
+    <!-- nothing -->
+    <div class="footer"></div>
+</section>
+
+<!-- Page Three -->
+<section id="section-features">
+    <!-- nothing -->
+    <div class="header"></div>
+    <!-- game feature: h3 h1 p timeline -->
+    <div class="main"></div>
+      <div class='bg-features bg-style container'>
+        <div class="row justify-content-end margin-col">
+            <div class="col-md-6 offset-md-3">
+                <div class="font-header-style tpt let-space">
+                    <h3>What's so special?</h3>
+                    <h1>features</h1>
+                </div>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <ul class="timeline t margin">
+                    <li>TRADITIONAL GAMES 
+                        <p class="p-color">if you miss your childhood,
+                          we provide many traditional games here</p>
+                    </li>
+                </ul>
+                <ul class='timeline2 t margin'>
+                    <li>GAME SUIT</li>
+                    <li>TBD</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- nothing -->
+    <div class="footer"></div>
+</section>
+
+<!-- Page Four -->
+<section id="section-requirements">
+    <!-- nothing -->
+    <div class="header"></div>
+    <!-- system requirements: h3 h1 border/table -->
+    <div class="main">
+    <!-- nothing -->
+    <div class="footer"></div>
+</section>
+
+<!-- Page Five -->
+<section id="section-topscores">
+    <div class="header"></div>
+    <!-- top scores: card (1) card without btn (1) -->
+    <div class="main"></div>
+    <div class="footer"></div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

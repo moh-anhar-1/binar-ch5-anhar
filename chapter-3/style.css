@@ -1,0 +1,404 @@
+/* Media Queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { 
+
+} */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) { 
+
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) { 
+    
+} */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+} */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { 
+    
+} */
+
+
+
+/* scroll behavior */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Typography Font */
+
+h1 {
+    font-family: "BEBAS NEUE";
+    font-weight: bold;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: "BEBAS NEUE";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h3 { 
+    font-family: "BEBAS NEUE";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+
+/* page one */
+
+
+/* background page one */
+#mainpage {
+    background-image: url("./Asset/Halaman1/main-bg.jpg");
+    background-size: cover;
+    background-position: 30%;
+    width: 100%;
+    height: 960.14px;
+}
+
+/* background nav bar */
+.bg-dark {
+    background-color: transparent !important;
+}
+
+.trn {
+    background-image: linear-gradient(rgba(0,0,0,1),rgb(0,0,0,0.5));
+    z-index: 99; 
+}
+
+/* text nav bar */
+/* logo */
+.navbar-brand {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: center;
+}
+
+/* main menu */
+#navbarMainMenu ul {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: center;
+}
+
+/* register */
+#navbarRegister ul {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: center;
+}
+
+/* main section p1 */
+.main-section-p1 h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 27%;
+    padding-bottom: 3%;
+    color: #ffffff;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: center;
+}
+
+.main-section-p1 h3 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5%;
+    color: #ffffff;
+    font-family: "BEBAS NEUE";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: center;
+}
+
+.call-action {
+    background: linear-gradient(183.46deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    color: #1A1917;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* footer story button on p1 */
+.story-button {
+    position: relative;
+    padding-top: 25%;
+    text-align: center;
+}
+
+.story {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+/* the end of page 1 */
+
+
+
+/* page two */
+
+
+/* background page two */
+#section-option {
+    background-image: url("./Asset/Halaman2/the-games-bg.jpg");
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 959.43px;
+}
+
+/* text page two */
+.main-section-p2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22%;
+    margin-left: -3%;
+}
+
+.main-section-p2 h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.main-section-p2 h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* slide show */
+/* carousel */
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+.img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 54% 0% 0% -35%;  
+}
+
+/* reposition slide show pointer */
+.slideshow-pointer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+}
+
+/* next item */
+.next-item {
+    position: absolute;
+    height: initial;
+    bottom: 45%;
+    right: -40px;
+    align-items: center;
+}
+
+/* prev item */
+.prev-item {
+    position: absolute;
+    height: initial;
+    bottom: 45%;
+    left: -40px;
+    align-items: center;
+}
+
+
+/* the end of page two */
+
+
+
+/* page three */
+
+
+/* background page three */
+#section-features {
+    background-image: url("./Asset/Halaman3/features.jpg");
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 870.26px;
+}
+
+/* text page three */
+.tpt {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 35% 0% 5% 3%;
+}
+
+.p-color {
+    color: white;
+    font-size: 18px;
+}
+
+.t {
+    list-style-type: none;
+    position: relative; 
+    color: #FFB548;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.margin-col {
+    margin-left: 5%;
+}
+
+.tpt h3 {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 2px;
+color: #FFFFFF;
+}
+
+.tpt h1 {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 56px;
+line-height: 64px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+/* timeline */
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    left: 21px;
+    width: 2px;
+    height: 152%;
+    z-index: 400;
+}
+ul.margin > li {
+    margin: 3px 25% 5% 5%;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1.30637px solid #FFFFFF;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    z-index: 400;
+    margin-top: 10px;
+}
+ul.timeline2 > li:before {
+    content: ' ';
+    background: transparent;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1.30637px solid #FFFFFF;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    z-index: 400;
+    margin-top: 10px;
+}
+.timeline2 {
+    top: 30px;
+}
+
+
+
+/* the end of page three */
+
+
+
+/* page four */
+#section-requirements {
+    background-image: url("./Asset/Halaman4/requirements.png");
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 960.16px;
+}
+
+/* page five */
+#section-topscores {
+    background-image: url("./Asset/Halaman5/bgimage5.png");
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 960.16px;
+}
+
